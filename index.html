@@ -8,68 +8,222 @@
 <link href='http://fonts.googleapis.com/css?family=Proxima+Nova' rel='stylesheet' type='text/css'>
 <style>
 
-body {
+
+/* CSS Document */
+
+html,
+.body {
+	-webkit-font-smoothing: antialiased;
+	padding: 0;
+	margin: 0;
+	overflow-y: hidden !important;
+	overflow-x: hidden !important;
+	box-sizing: border-box;
+	height: 100%;
 	background:#4254D7;
-	margin-left:auto;
-	margin-right:auto;
-	}
+	font-size: 15px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 500;
+}
+
+/* Navigation */
+
+nav {
+    position: fixed;
+    z-index: 10;
+    top: -10px;
+    left: 0;
+    min-width: 100%;
+	background:none;
+	padding:50px 0px 0px 100px;
+}
+
+.nav-text {
+	padding-top:10px;
+	font-size: 15px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 700;
+	-webkit-font-smoothing: antialiased;
+	color:#FFF;
+	float:left;
+	width:auto;
+	display:block !important;
+}
+
+/* Link Styles */
 
 a {
-	color:#FFFFFF;
-	text-decoration: none;
-	-webkit-transition: all .25s ease-in-out;
-	width: 200px;
-	padding:20px;
-	border-radius: 10px;
-	border: 2px solid #50E3C2;
-	font-family: 'Proxima Nova';
-	font-size: 20px;
-	line-height: 32px;
-	align-content:center;
-	text-align:center;
-	}
-	
-a:hover {
-	background-color:#50E3C2;
-	}
+	color: #FFF;
+	font-size: 15px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	-webkit-font-smoothing: antialiased;
+	border-bottom: 2px solid #0079FF;
+	-webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    transition: all .5s ease; 
+	text-decoration:none !important;
+}
 
-.containter {
-	margin-top: 50px;
+a:hover,
+a:active {
+	color: #FFF;
+	border-bottom: 2px solid #50E3C2;
+	text-decoration:none !important;
+}
+
+/* Type Styles */
+
+h1 {
+	font-size: 50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	line-height:55px;
+	-webkit-font-smoothing: antialiased;
+	color: #FFF;
+	text-align: center;
+}
+
+/* Intro Content */
+
+.intro-content {
+	height: 100%;
 	width: 100%;
-	font-family: 'Proxima Nova';
-	font-weight:100;
-	font-size: 16px;
-	color: #FFFFFF;
-	line-height: 20px;
-	text-align:center;
-	}
+	z-index:30;
+	padding: 50 0 0 50;
+	top: 45%;
+	position:relative;
+	align-content:center;
+}
+
+.intro-content-padding {
+	position: absolute;
+	left: 100px;
+	padding-right:100px;
+}
 	
-.containter2 {
-	width: 200px;
-	padding-top: 40px;
-	margin-left:auto;
-	margin-right:auto;
-	}
+/* Image Content */
+
+.large-image {
 	
+	width:80%;
+	position: absolute;
+    top: 10%;
+    left: 10%;
+	opacity: 0.6;
+	-webkit-transition: opacity 1s ease;
+    -moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    -ms-transition: opacity 1s ease;
+    transition: opacity 1s ease; 
+}
+
+.large-image:hover {
+	opacity: 1;
+}
+
 .logo {
 	width: 80px;
-	}
+	}	
 	
-.image {
-	width: 400px;
-	}
+/* Download Button */
 	
+.order-button {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 8px;
+	padding-bottom: 10px;
+	margin-right:190px;
+	border: 3px solid #0079FF;
+	border-radius:25px;
+	float:right;
+	width:auto;
+	-webkit-transition: border .5s ease;
+    -moz-transition: border .5s ease-in;
+    -o-transition: border .5s ease-in;
+    -ms-transition: border .5s ease-in;
+    transition: border .5s ease-in; 
+	
+}
+
+.order-button:hover {
+	border: 3px solid #50E3C2;
+	color: #FFF;
+}
+
+a.order-link {
+	font-size: 15px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 500;
+	-webkit-font-smoothing: antialiased;
+	color: #FFF;
+	-webkit-transition: color .5s ease;
+    -moz-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    -ms-transition: color .5s ease;
+    transition: color .5s ease; 
+	text-decoration:none !important;	
+}
+
+a.order-link:hover,
+a.order-link:active {
+	color:#FFF;
+	text-decoration:none !important;
+}
+
+/* Footer */
+
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	height: auto;
+	width:100%;
+	padding: 40px 100px 40px 100px;
+	clear: both;
+	z-index: 40;
+	display:inline-block;
+	color:#FFF;
+}
+
+.footer-left {
+	float: left;
+}
+
+.footer-right {
+	float: right;
+	margin-right:190px;
+}
+
+.footer-link {
+	margin: 0px 30px 0px 0px;
+}
 	
 </style>
 </head>
-<body>
-<div class="containter">
-<img class="logo" src="Web Assets/logo.png">
-<p class="title">The quickest way to share contacts.</p>
-<img class="image" src="Web Assets/iPhone 6 Black 4.7 Inch Form Factor@0.5x.png">
+<nav>
+  <div class="nav-text"><img class="logo" src="Web Assets/Logo.png"></div>
+  <a class="order-link" href="..." target="_top">
+  <div class="order-button">Download Now</div>
+  </a> </nav>
+    <footer class="footer">
+<div class="footer-left">
+Created by <a class="social" target="_blank" href="http://www.twitter.com/jesserose13">Jesse</a>, <a class="social" target="_blank" href="http://www.twitter.com/jefferson_aimes">Jeff</a>, &amp; <a class="social" target="_blank" href="http://www.twitter.com/fuckursneakers">Kevin</a></div>
+<div class="footer-right">
+<a class="footer-link" target="_blank" href="...">Contact</a><a class="social" target="_blank" href="...">Privacy Policy</a>
 </div>
-<div class="containter2">
-<div class="title"><a href="http://newyork.craigslist.org/search/stp">Download Now</a></div>
 </div>
+</footer>
+<body class="body">
+  <div class="intro-content">
+  <h1>Send contacts straight from your keyboard to any motherfucker on the planet.
+  </h1>
+</div>
+<div class="background">
+  <img class="large-image" src="../conkey_screen.gif">
+</div>
+
 </body>
 </html>

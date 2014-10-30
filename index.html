@@ -110,16 +110,9 @@ h1 {
     top: 10%;
     left: 10%;
 	opacity: 0.6;
-	-webkit-transition: opacity 1s ease;
-    -moz-transition: opacity 1s ease;
-    -o-transition: opacity 1s ease;
-    -ms-transition: opacity 1s ease;
-    transition: opacity 1s ease; 
+
 }
 
-.large-image:hover {
-	opacity: 1;
-}
 
 .logo {
 	width: 80px;
@@ -198,6 +191,17 @@ a.order-link:active {
 	margin: 0px 30px 0px 0px;
 }
 	
+/* Media Queries */
+
+/* Large Screen (wider than 800px) */
+@media (min-width: 800px) {
+  .large-image {
+    width: 80%;
+  }
+}
+
+
+
 </style>
 </head>
 <nav>

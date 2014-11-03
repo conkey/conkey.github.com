@@ -82,6 +82,7 @@ h1 {
 	-webkit-font-smoothing: antialiased;
 	color: #FFF;
 	text-align: center;
+	padding: 0 100px;
 }
 
 h2 {

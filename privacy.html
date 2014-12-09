@@ -7,27 +7,6 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <link rel="shortcut icon" href="favicon.ico"/>
 
-<span><script type="text/javascript" src="<a class="linkclass" href="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js">http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js</a>"></script>
-<script type="text/javascript">// <![CDATA[
-///////////Javascript
-$(function(){
- $("#frm").submit(function(e){
- e.preventDefault();
- $.post("sendnotifications.php", $("#frm").serialize(),
- function(data){
- if(data.sms_sent == 'OK'){
- alert("Message Sent");
- } else {
- alert("Message Not Sent");
- }
- }, "json");
- });
- 
-});
- 
-// ]]></script>
-</span>
-
 </head>
 <body class="body">
 

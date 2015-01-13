@@ -209,7 +209,36 @@ a.order-link:active {
 /* Large Screen (wider than 800px) */
 @media (min-width: 800px) {
   .large-image {
-    width: 80%;
+    width: 70%;
   }
 }
 
+/* Medium Screen (wider than 600px) */
+@media (min-width: 600px) and (max-width: 799px) {
+  .large-image {
+    width: 60%;
+  }
+}
+
+/* Small Screen (wider than 375px) */
+
+@media (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+  .large-image {
+    width: 100%;
+    padding-top: 200px;
+  }
+  h1 {font-size: 80px;
+  	line-height: 80px;
+  	padding-top: 300px;
+  }
+  .logo {
+  	width: 250px;
+  }
+  .order-button {
+  	font-size: 60px;
+  	border: 6px solid #0079FF;
+  	
+  }
+
+
+}

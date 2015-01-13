@@ -244,5 +244,9 @@ a.order-link:active {
   	font-size: 32px;
   }
 
+  body {
+  	overflow: hidden;
+  }
+
 
 }
